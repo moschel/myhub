@@ -16,3 +16,12 @@ export default function(selector){
         }
     });
 }
+
+// Requirement #3: render repos data
+
+// https://api.github.com/users/justinbmeyer/repos
+
+// <dl class="dl-horizontal">
+// <dt><a href="https://api.github.com/repos/justinbmeyer/canjs">canjs</a></dt>
+// <dd>Can do JS, better, faster, easier.</dd>
+// ...

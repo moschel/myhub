@@ -23,3 +23,13 @@ var updatePage = function(){
 $(window).on("hashchange", updatePage);
 
 updatePage();
+
+
+// Requirement #1: render Welcome Home when the page loads without a hash
+
+// Requirement #2: invoke repos and puppies modules when their hash is 
+// clicked (with back button support)
+
+// System.import(path).then(function(moduleFn){
+//     moduleFn["default"];
+// });
