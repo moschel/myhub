@@ -1,7 +1,7 @@
-require("justifiedGallery");
-var $ = require("jquery");
+import $ from "jquery";
+import "justifiedGallery";
 
-module.exports = function(selector) {
+export default function(selector) {
     $(selector).html("Loading...");
 	$.ajax({
 		url: 'https://api.flickr.com/services/feeds/photos_public.gne',

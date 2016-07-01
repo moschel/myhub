@@ -14,10 +14,8 @@ var updatePage = function(){
     if(!hash) {
         $("#main").html("Welcome home");
     } else {
-        System.import("myhub/"+hash+"/"+hash).then(function(moduleOrPlugin){
-            var plugin = typeof moduleOrPlugin === "function" ?
-                moduleOrPlugin : moduleOrPlugin["default"];
-            plugin("#main");
+        System.import("myhub/"+hash+"/"+hash).then(function(moduleFn){
+            moduleFn["default"]("#main");
         });
     }
 };
